@@ -7,7 +7,7 @@ export class Dashboard extends React.Component {
 
         return (
             <div>
-                <CardComponent />
+                <CardComponent name={"PETAR P"} cardNo={'47295'}/>
             </div>
         )
     }

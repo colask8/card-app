@@ -1,3 +1,38 @@
-.card_content {
+.card_number {
     position: absolute;
+    left: 30px;
+    top: 125px;
+}
+
+.card_chip {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 50px;
+    height: 44px;
+}
+
+.card_container {
+    position: relative;
+    margin: 100px;
+}
+
+.card_expiry {
+    position: absolute;
+    top: 184px;
+    left: 304px;
+}
+
+.card_holder {
+    position: absolute;
+    top: 184px;
+    left: 30px;
+}
+
+.card_type {
+    position: absolute;
+    width: 136px;
+    height: 136px;
+    top: -32px;
+    left: 249px;
 }
