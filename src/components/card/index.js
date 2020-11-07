@@ -27,7 +27,7 @@ const CardComponent = ({name, cardNo, expiry}) => {
             { cardNo && typeof cardNo !== 'undefined' &&
                 <p className={'card_number'}>{print_cardNo(cardNo)}</p>
             }
-            <p className={'card_expiry'}> 02/22</p>
+            <p className={'card_expiry'}> {expiry}</p>
         </div>
     )
 }

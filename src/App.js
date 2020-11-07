@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import Dashboard from './pages/dashboard/Dashboard';
+import EditCard from './pages/edit-card/index.js';
 
 const theme = createMuiTheme();
 
@@ -26,10 +27,9 @@ export const App = ({store, persistor, history}) => {
           <ConnectedRouter history={history}>
             <Suspense fallback={<div>loading...</div>}>
               <Switch>
-                <Route exact path='/' component={Dashboard}/>
-                <Route path='/cards' component={DefaultComponent}/>
-                <Route path='/cards/add' component={DefaultComponent}/>
-                <Route path='/cards/:id/edit' component={DefaultComponent}/>
+                <Route exact path='/cards' component={Dashboard}/>
+                <Route path='/cards/:type' component={EditCard}/>
+                <Route path='/cards/:id/:type' component={EditCard}/>
               </Switch>
             </Suspense>
           </ConnectedRouter>
